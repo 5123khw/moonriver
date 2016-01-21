@@ -1,2 +1,0 @@
-abcd    1234    한글    한글 인코딩    Base64 Incoding
-good luck
